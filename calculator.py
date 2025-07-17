@@ -1,12 +1,12 @@
 from tkinter import *
 
-root=Tk()
+root = Tk()
 root.title('Simple_Calculator')
 root.geometry('570x600+100+200')
 root.resizable(False,False)
 root.configure(bg='#17161b')
 
-equation=""
+equation= ""
 
 def show(value):
     global equation
@@ -21,7 +21,7 @@ def clear():
 def calculate():
     global equation
     result=""
-    if equation !="":
+    if equation != "":
         try:
             result=eval(equation)
         except:
